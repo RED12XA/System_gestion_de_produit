@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creer lire mise a jour suprimer </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>ES - S A R L </h2>
+            <p>Systeme de Gestion de produits</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Title" id="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="Prix">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="Tax">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="L'annoonce">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="Reduction">
+                <small id="total">00.00</small>
+            </div>
+            <input placeholder="Quantity" type="number" id="count">
+            <input type="text" placeholder="Category" id="category">
+            <button id="submit">Créer</button>
+        </div>
+        <div class="outputs">
+            <div class="search">
+                <input type="text" id="search" onkeyup="searchData(this.value)" placeholder="Rechercher...">
+                <div class="btnSearch">
+                    <button  id="searchTitle">
+                        Rechercher avec le nom de Produit ou avec Category
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>Titre</th>
+                <th>Prix</th>
+                <th>Tax</th>
+                <th>Ads</th>
+                <th>Reduction</th>
+                <th>Total</th>
+                <th>Category</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tbody id="tbody">
+                <tr>
+                    <th>Aucun Produit</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- CARD INFO -->
+    <div class="card">
+        <svg width="100px" height="100px" viewBox="0 0 1024 1024" fill="#000000" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 897.6c-108 0-209.6-42.4-285.6-118.4-76-76-118.4-177.6-118.4-285.6 0-108 42.4-209.6 118.4-285.6 76-76 177.6-118.4 285.6-118.4 108 0 209.6 42.4 285.6 118.4 157.6 157.6 157.6 413.6 0 571.2-76 76-177.6 118.4-285.6 118.4z m0-760c-95.2 0-184.8 36.8-252 104-67.2 67.2-104 156.8-104 252s36.8 184.8 104 252c67.2 67.2 156.8 104 252 104 95.2 0 184.8-36.8 252-104 139.2-139.2 139.2-364.8 0-504-67.2-67.2-156.8-104-252-104z" fill="" /><path d="M707.872 329.392L348.096 689.16l-31.68-31.68 359.776-359.768z" fill="" /><path d="M328 340.8l32-31.2 348 348-32 32z" fill="" /></svg> 
+        <p class="cookieHeading">Etez Vous sur ?</p>
+         <p class="cookieDescription">La suppression de ce produit de la base de données est définitive</p>
+         <p id="itemDeleted">item deleted</p>
+         <div class="buttonContainer">
+           <button class="acceptButton" onclick="deleteRowVerified()">Suprimer</button>
+         <button class="declineButton" onclick="canceldisplay()">Annuler</button>
+         </div>
+
+         
+         
+       
+       </div>  
+       
+       <div class="tato">
+            <hr>
+            <div class="tatoFlex">
+                <h2>DEV BY RIDA ESSBAYI 25/04/2024</h2>
+                <h2>HTML - CSS - JAVASCRIPT</h2>
+            </div>
+        
+       </div>     
+    <script src="main.js"></script>
+</body>
+</html>

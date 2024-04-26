@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --danger-color : #D64045;
+    --button-color : #084C61;
+    --verified-color : #1B998B;
+    --update-color : #0B3954;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-color:#FAFFFD ;
+    color: black;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+#title{
+    font-weight: 550;
+
+}
+input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+input:focus{
+    border-bottom: 2px solid var(--verified-color);
+}
+.price input,small{
+    width: 20%;
+}
+
+#total{
+    color: #FAFFFD;
+    background-color: var(--danger-color);
+    padding: 5px 20px;
+    text-align: left;
+}
+#total::before{
+    content: 'Total : ';
+}
+#delete:hover{
+    background-color: #D64045;
+    border: none;
+}
+button{
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color:#084C61;
+    height: 30px;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+.btnSearch{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    background-color: #4F6D7A;
+    scale: 1.01;
+}
+#submit{
+    margin-top: 5px;
+}
+#searchTitle{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background: transparent;
+    color: var(--update-color);
+    font-weight: 500;
+}
+#searchTitle:hover{
+    background-color: var(--button-color);
+    color: #fff;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table span{
+    text-align: right;
+}
+table th{
+    text-transform: uppercase;
+}
+tr{
+    height: 40px;
+}
+th{
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.249);
+    padding: 5px;
+}
+
+table{
+    border: 1px solid black;
+}
+
+#dh{
+    color: var(--button-color);
+}
+#update:hover{
+    background-color: var(--update-color);
+    border: none;
+}
+
+/* Card info */
+
+.card{
+    width: 400px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  }
+  
+  #cookieSvg {
+    width: 50px;
+  }
+  
+  #cookieSvg g path {
+    text-align: center;
+    fill: rgb(97, 81, 81);
+  }
+  
+  .cookieHeading {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: rgb(26, 26, 26);
+  }
+  
+  .cookieDescription {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+  }
+  
+  .acceptButton {
+    padding: 5px 15px;
+    background-color: var(--button-color);
+    transition-duration: .2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+  
+  .declineButton {
+    padding: 5px 15px;
+    height :30px;
+    background-color: rgb(218, 218, 218);
+    transition-duration: .2s;
+    color: rgb(46, 46, 46);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+  
+  .declineButton:hover {
+    background-color: #ebebeb;
+    transition-duration: 0.2s;
+  }
+  
+  .acceptButton:hover {
+    background-color: var(--danger-color);
+    transition-duration: 0.2s;
+  }
+  #itemDeleted{
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--danger-color);
+  }
+.card{
+    display: none;
+}
+
+/* MY TATO */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.tato{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tato h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Share Tech Mono", monospace;
+}
+.tato hr{
+    background-color: var(--button-color);
+    width: 80%;
+    height: 1px;
+}
+
+.tato > .tatoFlex{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* color */
+.colorred::placeholder{
+    color: var(--danger-color);
+}
