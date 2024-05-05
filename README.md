@@ -1,9 +1,1 @@
-Projet System de gestion de produit Javascript html css
-#Creer une produit 
-#Suprimmer
-#Modifier
-#Calcul le total prix , tva, si reduction applique , l'annonce
-#Tout les donnees stocke dans local storage + array et sur array objects collect le produit avec son titre et prix ....
-#La validation des champs titre de produit et prix est necessaire pour ecrire le produit dans local storage
-#si l'utilisateur clicke sur suprimer il faut valider l'operation dans un pop up affiche 
-
+Projet de système de gestion de produits utilisant JavaScript, HTML et CSS. Les fonctionnalités incluent la création, la suppression et la modification de produits, ainsi que le calcul du prix total, de la TVA et des réductions éventuelles. Toutes les données sont stockées dans le local storage et un tableau d'objets collecte les produits avec leur titre et leur prix. La validation des champs titre de produit et prix est nécessaire pour enregistrer le produit dans le local storage. Lorsque l'utilisateur clique sur 'Supprimer', une confirmation via une fenêtre pop-up est nécessaire pour valider l'opération.
